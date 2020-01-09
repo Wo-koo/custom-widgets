@@ -1,0 +1,76 @@
+/* normal state */
+
+.custom-select{
+    font-size: 0.625em;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    padding: 0em 2.5em .2em .5em;/*left the arrow btn 2em width space */
+    width: 10em;
+    border: .2em solid #000;
+    border-radius: .3em;
+    
+    background: #f0f0f0;
+    
+    display:inline-block;
+    position: relative;
+
+}
+
+.custom-select .value{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+.custom-select .arrow-btn{
+    height: 100%;
+    width: 2em;
+    z-index: 1;
+    display:inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    right: 0;
+
+    border-left: .2em solid #000;
+    border-radius: 0 .1em .1em 0;
+    text-align: center;
+    padding-top: .1em;
+}
+
+.custom-select .optlist{
+    z-index: 2;
+    
+    margin:0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    min-width: 100%;
+    max-height: 10em;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    border: .2em solid #000;
+    border-top: .1em;
+    border-radius: 0 0 .4em .4em;
+    
+    top: 100%;/*这个地方是怎么回事？*/
+    left: 0;
+    
+    
+    position: absolute;
+    list-style: none;
+    display: inline-block;
+}
+
+/* focus state */
+
+.custom-select:focus{
+    border-color: green;
+}
+
