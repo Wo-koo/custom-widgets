@@ -1,0 +1,40 @@
+/* normal state */
+.toggle{
+  display: inline-block;
+  position: relative;
+  
+  border: .25em solid #000;
+  border-radius: 1em;
+  background: white;
+  
+  width: 4em;
+  height: 1.5em;
+}
+
+.toggle-btn{
+  display: inline-block;
+  position: absolute;
+  left: 6.25%;
+  
+  height: 1em;
+  width: 1em;
+  margin: .25em 0;
+  
+  border: 0 solid #000;
+  border-radius: .5em;
+  background: #000;
+  
+  transition: all .4s;
+  
+}
+
+/* on state */
+.on{
+  background: red;
+}
+
+.on .toggle-btn{
+  left: 91.45%;
+  transition: all .4s;
+}
+
