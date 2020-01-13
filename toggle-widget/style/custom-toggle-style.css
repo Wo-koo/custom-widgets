@@ -15,6 +15,7 @@
   display: inline-block;
   position: absolute;
   left: 6.25%;
+  z-index: 1;
   
   height: 1em;
   width: 1em;
@@ -34,7 +35,7 @@
 }
 
 .on .toggle-btn{
-  left: 91.45%;
+  left: 69%;
   transition: all .4s;
 }
 
